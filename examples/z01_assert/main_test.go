@@ -1,14 +1,13 @@
 package main
 
 import (
-	"github.com/zhangdapeng520/zdpgo_test/libs/assert"
+	"github.com/zhangdapeng520/zdpgo_test"
 	"testing"
-	//"github.com/stretchr/testify/assert"
 )
 
 func TestCalculate(t *testing.T) {
-	// 创建断言对象
-	assert := assert.New(t)
+	test := zdpgo_test.New()
+	test.SetTestObj(t)
 
 	// 创建表格
 	var tests = []struct {
@@ -23,8 +22,8 @@ func TestCalculate(t *testing.T) {
 	}
 
 	// 遍历表格数据
-	for _, test := range tests {
+	for _, testData := range tests {
 		// 断言
-		assert.Equal(Calculate(test.input), test.expected)
+		test.Assert.Equal(Calculate(testData.input), testData.expected)
 	}
 }

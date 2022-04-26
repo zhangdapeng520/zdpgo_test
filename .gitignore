@@ -9,5 +9,4 @@
 **/.vscode
 **/logs
 **/__pycache__
-**/test*
 **/secret

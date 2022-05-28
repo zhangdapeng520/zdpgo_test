@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/zhangdapeng520/zdpgo_test/libs/yaml"
+	"github.com/zhangdapeng520/zdpgo_test/yaml"
 	"math"
 	"os"
 	"reflect"
@@ -18,8 +18,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/zhangdapeng520/zdpgo_test/libs/difflib"
-	"github.com/zhangdapeng520/zdpgo_test/libs/spew"
+	"github.com/zhangdapeng520/zdpgo_test/difflib"
+	"github.com/zhangdapeng520/zdpgo_test/spew"
 )
 
 //go:generate sh -c "cd ../_codegen && go build && cd - && ../_codegen/_codegen -output-package=assert -template=assertion_format.go.tmpl"

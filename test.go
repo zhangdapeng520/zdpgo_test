@@ -1,7 +1,7 @@
 package zdpgo_test
 
 import (
-	"github.com/zhangdapeng520/zdpgo_test/libs/assert"
+	"github.com/zhangdapeng520/zdpgo_test/assert"
 	"testing"
 )
 
